@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Menelik Epoxy Floor Coating, LLC - Connecticut's trusted epoxy flooring contractor. Licensed, insured, and committed to quality craftsmanship since [year].">
+    <meta name="keywords" content="about Menelik Epoxy, Connecticut epoxy contractor, licensed epoxy installer, epoxy flooring company CT, professional floor coating">
+    <meta name="author" content="Menelik Epoxy Floor Coating, LLC">
+    <meta property="og:title" content="About Menelik Epoxy Floor Coating | Connecticut's Premier Flooring Contractor">
+    <meta property="og:description" content="Learn about Connecticut's trusted epoxy flooring experts. Licensed, insured, and dedicated to exceptional quality.">
+    <meta property="og:type" content="website">
+    <title>About Us | Menelik Epoxy Floor Coating, LLC - Connecticut Epoxy Experts</title>
+    
+    <!-- Grift Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #1a1a1a;
+            --accent-color: #333333;
+            --highlight-color: #ffffff;
+            --light-bg: #f8f8f8;
+            --text-dark: #000000;
+            --text-light: #ffffff;
+            --border-color: #e0e0e0;
+            --fluorescent-green: #00ff41;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+        
+        /* Navigation */
+        nav {
+            background: var(--primary-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo {
+            height: 105px;
+            width: auto;
+        }
+        
+        .company-name {
+            color: var(--text-light);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--highlight-color);
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            font-weight: 900;
+            letter-spacing: -1.5px;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        .section-subtitle {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        /* Story Section */
+        .story-section {
+            background: var(--light-bg);
+            padding: 4rem 2rem;
+        }
+        
+        .story-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Values Grid */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .value-card {
+            background: white;
+            padding: 2rem;
+            border-left: 4px solid var(--primary-color);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .value-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .value-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        /* Certifications Section */
+        .certifications-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .cert-card {
+            background: var(--light-bg);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 0;
+        }
+        
+        .cert-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .cert-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        /* Stats Section */
+        .stats-section {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 4rem 2rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            font-family: 'Outfit', sans-serif;
+            color: var(--fluorescent-green);
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Team Section */
+        .team-section {
+            background: white;
+            padding: 4rem 2rem;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto 0;
+        }
+        
+        .team-member {
+            text-align: center;
+        }
+        
+        .team-photo {
+            width: 100%;
+            height: 300px;
+            background: var(--light-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+            border: 2px dashed var(--border-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 800;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        .team-role {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* Why Choose Section */
+        .why-choose-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .why-card {
+            background: var(--light-bg);
+            padding: 2rem;
+        }
+        
+        .why-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            padding: 14px 32px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+            font-weight: 600;
+            display: inline-block;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+        }
+        
+        .btn-primary {
+            background: var(--fluorescent-green);
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background: #00e639;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 255, 65, 0.5);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--fluorescent-green);
+        }
+        
+        /* Image Placeholder */
+        .image-placeholder {
+            width: 100%;
+            height: 400px;
+            background: var(--light-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+            margin: 2rem 0;
+            border: 2px dashed var(--border-color);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .logo {
+                height: 70px;
+            }
+            
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="MenelikLogo1.png" alt="Menelik Epoxy Floor Coating Logo" class="logo">
+                <span class="company-name">Menelik Epoxy</span>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>About Menelik Epoxy Floor Coating</h1>
+        <p>Connecticut's Trusted Partner for Professional Epoxy Flooring Solutions</p>
+    </section>
+
+    <!-- Our Story -->
+    <section class="story-section">
+        <div class="story-content">
+            <h2 class="section-title">Our Story</h2>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                Menelik Epoxy Floor Coating, LLC was founded with a simple mission: to bring professional-grade epoxy flooring solutions to Connecticut homeowners and businesses at honest, transparent pricing. What started as a commitment to quality craftsmanship has grown into Connecticut's trusted name in epoxy floor coatings.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                We recognized that Connecticut property owners deserved better than the substandard garage floor paints and DIY kits available at big box stores. They needed a professional contractor who understood the science of concrete preparation, chemical bonding, and long-lasting protective coatings. That's exactly what we deliver on every project.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                Today, we serve residential, commercial, and industrial clients throughout Connecticut, from single-car garages to 50,000+ square foot warehouses. Every installation is treated with the same attention to detail, backed by our licensed expertise and lifetime support guarantee.
+            </p>
+            
+            <div class="image-placeholder">
+                Add Image: team-photo-or-work-in-progress.jpg (1200x400px)
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Stats -->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">[X]+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">[X]+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Licensed & Insured</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5★</div>
+                <div class="stat-label">Customer Rating</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Values -->
+    <div class="content-section">
+        <h2 class="section-title">Our Mission & Values</h2>
+        
+        <div style="background: var(--light-bg); padding: 2rem; margin: 2rem 0;">
+            <h3 class="section-subtitle">Our Mission</h3>
+            <p style="font-size: 1.1rem; line-height: 1.8;">
+                To provide Connecticut property owners with superior epoxy floor coating systems that combine exceptional durability, professional aesthetics, and honest value. We're committed to educating our customers, delivering craftsmanship that exceeds industry standards, and standing behind every installation with comprehensive warranties and lifetime support.
+            </p>
+        </div>
+
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">🎯</div>
+                <h3>Quality First</h3>
+                <p>We never compromise on materials or workmanship. Every project uses premium epoxy systems and proven installation techniques that ensure 20+ year lifespans. No shortcuts, no cheap alternatives.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">💡</div>
+                <h3>Education & Transparency</h3>
+                <p>We believe informed customers make better decisions. We explain our process, answer your questions, and provide detailed proposals with no hidden fees or surprise charges.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">🤝</div>
+                <h3>Customer Relationships</h3>
+                <p>Your satisfaction doesn't end when we finish the job. We're here for maintenance questions, touch-ups, and expansions years down the road. You're not just a customer—you're a partner.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">⚡</div>
+                <h3>Professionalism</h3>
+                <p>From the first phone call to final walkthrough, we maintain punctuality, clear communication, clean worksites, and respect for your property. We treat every project like it's our own home.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">🔧</div>
+                <h3>Continuous Improvement</h3>
+                <p>The epoxy industry evolves constantly. We stay current with new formulations, application techniques, and equipment to deliver the best possible results for our Connecticut clients.</p>
+            </div>
+
+            <div class="value-card">
+                <div class="value-icon">🛡️</div>
+                <h3>Accountability</h3>
+                <p>We stand behind our work with written warranties and lifetime support. If there's ever an issue with our installation, we make it right—no questions, no runaround.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <section style="background: var(--light-bg); padding: 4rem 2rem;">
+        <div class="content-section" style="padding: 0;">
+            <h2 class="section-title">Why Connecticut Chooses Menelik Epoxy</h2>
+            
+            <div class="why-choose-grid">
+                <div class="why-card">
+                    <h3>📜 Licensed & Insured</h3>
+                    <p>We're a fully licensed Connecticut contractor with comprehensive liability insurance and workers' compensation coverage. Your property and our team are protected on every job.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>🏆 Industry Expertise</h3>
+                    <p>Our team has extensive training in concrete surface preparation, epoxy chemistry, and advanced coating applications. We're not general contractors dabbling in epoxy—this is what we do.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>💎 Premium Materials</h3>
+                    <p>We use only commercial-grade, 100% solids epoxy systems from industry-leading manufacturers. No water-based hobby coatings or cheap garage floor paint.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>🔬 Proper Surface Prep</h3>
+                    <p>We diamond-grind every concrete surface to create ideal adhesion profiles. Surface preparation is 80% of installation success, and we never skip this critical step.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>📋 Written Warranties</h3>
+                    <p>All installations include detailed written warranties covering material defects and workmanship. We specify exactly what's covered and for how long—no vague promises.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>🎨 Design Flexibility</h3>
+                    <p>From solid colors to metallic effects, custom logos to decorative flakes, we create floors that match your vision. Free design consultations for all projects.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>⏱️ Respect Your Time</h3>
+                    <p>We provide accurate timelines, show up when scheduled, and complete installations efficiently. Most residential projects finish in 1-2 days with minimal disruption.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>💰 Transparent Pricing</h3>
+                    <p>Our detailed proposals break down every cost—materials, labor, preparation, coatings. You'll know exactly what you're paying for before we start.</p>
+                </div>
+
+                <div class="why-card">
+                    <h3>🏠 Local Knowledge</h3>
+                    <p>We understand Connecticut's climate, concrete types, and building codes. Our installations are optimized for local conditions and moisture patterns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Compliance -->
+    <div class="content-section">
+        <h2 class="section-title">Certifications & Compliance</h2>
+        
+        <div class="certifications-grid">
+            <div class="cert-card">
+                <div class="cert-icon">📋</div>
+                <h3>Connecticut Licensed Contractor</h3>
+                <p>Fully licensed for home improvement and commercial contracting in Connecticut with all required bonds and registrations.</p>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">🛡️</div>
+                <h3>Comprehensive Insurance</h3>
+                <p>General liability insurance and workers' compensation coverage protect you and our team on every project.</p>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">⚠️</div>
+                <h3>OSHA Safety Compliance</h3>
+                <p>Our team follows OSHA safety protocols and uses proper protective equipment for chemical handling and application.</p>
+            </div>
+
+            <div class="cert-card">
+                <div class="cert-icon">♻️</div>
+                <h3>Environmental Responsibility</h3>
+                <p>We use low-VOC formulations when possible and dispose of materials according to Connecticut environmental regulations.</p>
+            </div>
+        </div>
+
+        <p style="text-align: center; margin-top: 2rem; font-size: 1rem; color: var(--accent-color);">
+            License verification and insurance certificates available upon request.
+        </p>
+    </div>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2 class="section-title" style="text-align: center;">Meet Our Team</h2>
+        <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto 3rem; line-height: 1.8;">
+            Our experienced professionals are passionate about delivering exceptional epoxy flooring solutions. Every team member is trained in proper surface preparation, coating application, and customer service excellence.
+        </p>
+        
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="team-photo">
+                    Add Photo: team-member-1.jpg (600x600px)
+                </div>
+                <h3>[Owner/Founder Name]</h3>
+                <div class="team-role">Owner & Lead Installer</div>
+                <p>[Brief bio - 2-3 sentences about experience, expertise, and commitment to quality]</p>
+            </div>
+
+            <div class="team-member">
+                <div class="team-photo">
+                    Add Photo: team-member-2.jpg (600x600px)
+                </div>
+                <h3>[Team Member Name]</h3>
+                <div class="team-role">Senior Installation Specialist</div>
+                <p>[Brief bio - 2-3 sentences highlighting experience and specialization]</p>
+            </div>
+
+            <div class="team-member">
+                <div class="team-photo">
+                    Add Photo: team-member-3.jpg (600x600px)
+                </div>
+                <h3>[Team Member Name]</h3>
+                <div class="team-role">Project Manager</div>
+                <p>[Brief bio - 2-3 sentences about role and customer service focus]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area -->
+    <div class="content-section">
+        <h2 class="section-title">Proudly Serving All of Connecticut</h2>
+        <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem;">
+            As a Connecticut-based contractor, we serve residential, commercial, and industrial clients throughout the state. From Fairfield County to Hartford County, New Haven to Litchfield, our team brings professional epoxy flooring expertise to every corner of Connecticut.
+        </p>
+        
+        <div style="background: var(--light-bg); padding: 2rem; margin: 2rem 0;">
+            <h3 class="section-subtitle">Major Service Areas Include:</h3>
+            <div style="columns: 3; gap: 2rem; margin-top: 1.5rem;">
+                <p style="margin-bottom: 0.5rem;">• Bridgeport</p>
+                <p style="margin-bottom: 0.5rem;">• Hartford</p>
+                <p style="margin-bottom: 0.5rem;">• New Haven</p>
+                <p style="margin-bottom: 0.5rem;">• Stamford</p>
+                <p style="margin-bottom: 0.5rem;">• Waterbury</p>
+                <p style="margin-bottom: 0.5rem;">• Norwalk</p>
+                <p style="margin-bottom: 0.5rem;">• Danbury</p>
+                <p style="margin-bottom: 0.5rem;">• New Britain</p>
+                <p style="margin-bottom: 0.5rem;">• Greenwich</p>
+                <p style="margin-bottom: 0.5rem;">• West Hartford</p>
+                <p style="margin-bottom: 0.5rem;">• Milford</p>
+                <p style="margin-bottom: 0.5rem;">• Meriden</p>
+            </div>
+            <p style="margin-top: 1.5rem; font-style: italic;">And all surrounding Connecticut communities</p>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Ready to Work with Connecticut's Best?</h2>
+        <p>Experience the Menelik Epoxy difference. Contact us today for a free consultation and detailed estimate.</p>
+        <a href="index.html#contact" class="btn btn-primary">Get Free Estimate</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Menelik Epoxy Floor Coating, LLC | Licensed & Insured in Connecticut</p>
+        <p>Phone: <a href="tel:203-449-8607">(203) 449-8607</a> | Email: <a href="mailto:info@menelikepoxy.com">info@menelikepoxy.com</a></p>
+        <p style="margin-top: 1rem;">
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="index.html#services">Services</a> | 
+            <a href="gallery.html">Gallery</a> | 
+            <a href="index.html#contact">Contact</a>
+        </p>
+        <p style="margin-top: 1rem;">&copy; 2024 Menelik Epoxy Floor Coating, LLC. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
