@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menelik Epoxy Floor Coating Gallery - View our Connecticut epoxy flooring projects. Before & after photos, garage floors, commercial installations, and more.">
+    <meta name="keywords" content="epoxy flooring gallery, Connecticut epoxy photos, garage floor before after, epoxy flooring examples, commercial epoxy gallery">
+    <meta name="author" content="Menelik Epoxy Floor Coating, LLC">
+    <meta property="og:title" content="Project Gallery | Menelik Epoxy Floor Coating Connecticut">
+    <meta property="og:description" content="Browse our portfolio of beautiful epoxy flooring installations throughout Connecticut.">
+    <meta property="og:type" content="website">
+    <title>Gallery | Menelik Epoxy Floor Coating - Connecticut Projects</title>
+    
+    <!-- Grift Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        :root {
+            --primary-color: #000000;
+            --secondary-color: #1a1a1a;
+            --accent-color: #333333;
+            --highlight-color: #ffffff;
+            --light-bg: #f8f8f8;
+            --text-dark: #000000;
+            --text-light: #ffffff;
+            --border-color: #e0e0e0;
+            --fluorescent-green: #00ff41;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+        
+        /* Navigation */
+        nav {
+            background: var(--primary-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo {
+            height: 105px;
+            width: auto;
+        }
+        
+        .company-name {
+            color: var(--text-light);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--highlight-color);
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 900;
+            letter-spacing: -1.5px;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        
+        .section-description {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            color: var(--accent-color);
+        }
+        
+        /* Filter Buttons */
+        .filter-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 12px 24px;
+            background: white;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            letter-spacing: 0.5px;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            background: var(--light-bg);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-item video {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 2rem 1rem 1rem;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+        }
+        
+        .gallery-title {
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            font-family: 'Outfit', sans-serif;
+        }
+        
+        .gallery-category {
+            color: var(--fluorescent-green);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .video-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--fluorescent-green);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 90%;
+            position: relative;
+        }
+        
+        .lightbox-content img,
+        .lightbox-content video {
+            max-width: 100%;
+            max-height: 90vh;
+            display: block;
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0.5rem 1rem;
+        }
+        
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 3rem;
+            cursor: pointer;
+            background: rgba(0,0,0,0.5);
+            border: none;
+            padding: 1rem;
+            transition: background 0.3s;
+        }
+        
+        .lightbox-nav:hover {
+            background: rgba(0,0,0,0.8);
+        }
+        
+        .lightbox-prev {
+            left: 1rem;
+        }
+        
+        .lightbox-next {
+            right: 1rem;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            font-weight: 900;
+            font-family: 'Outfit', sans-serif;
+            text-transform: uppercase;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            padding: 14px 32px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s;
+            font-weight: 600;
+            display: inline-block;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+        }
+        
+        .btn-primary {
+            background: var(--fluorescent-green);
+            color: var(--primary-color);
+        }
+        
+        .btn-primary:hover {
+            background: #00e639;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 255, 65, 0.5);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: var(--text-light);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        footer a {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--fluorescent-green);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu-toggle {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+            
+            .section-title {
+                font-size: 1.75rem;
+            }
+            
+            .logo {
+                height: 70px;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 1rem;
+            }
+            
+            .filter-buttons {
+                gap: 0.5rem;
+            }
+            
+            .filter-btn {
+                padding: 8px 16px;
+                font-size: 0.75rem;
+            }
+            
+            .lightbox-nav {
+                font-size: 2rem;
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="MenelikLogo1.png" alt="Menelik Epoxy Floor Coating Logo" class="logo">
+                <span class="company-name">Menelik Epoxy</span>
+            </div>
+            <button class="mobile-menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Project Gallery</h1>
+        <p>Browse Our Portfolio of Beautiful Epoxy Flooring Installations Across Connecticut</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="content-section">
+        <h2 class="section-title">Our Work</h2>
+        <p class="section-description">Explore our completed projects featuring residential garages, commercial spaces, industrial facilities, and decorative epoxy installations.</p>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterGallery('all')">All Projects</button>
+            <button class="filter-btn" onclick="filterGallery('residential')">Residential</button>
+            <button class="filter-btn" onclick="filterGallery('commercial')">Commercial</button>
+            <button class="filter-btn" onclick="filterGallery('industrial')">Industrial</button>
+            <button class="filter-btn" onclick="filterGallery('decorative')">Decorative</button>
+            <button class="filter-btn" onclick="filterGallery('videos')">Videos</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+            
+            <!-- IMAGE 1 - Residential Garage -->
+            <div class="gallery-item" data-category="residential" onclick="openLightbox(0)">
+                <img src="gallery-image-1.jpg" alt="Residential Garage Epoxy Flooring">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Modern Garage Transformation</div>
+                    <div class="gallery-category">Residential</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 2 - Commercial Space -->
+            <div class="gallery-item" data-category="commercial" onclick="openLightbox(1)">
+                <img src="gallery-image-2.jpg" alt="Commercial Epoxy Flooring">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Retail Store Floor</div>
+                    <div class="gallery-category">Commercial</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 3 - Decorative Metallic -->
+            <div class="gallery-item" data-category="decorative" onclick="openLightbox(2)">
+                <img src="gallery-image-3.jpg" alt="Metallic Epoxy Flooring">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Metallic Epoxy Showroom</div>
+                    <div class="gallery-category">Decorative</div>
+                </div>
+            </div>
+
+            <!-- VIDEO 1 -->
+            <div class="gallery-item" data-category="videos residential" onclick="openLightbox(3)">
+                <video muted loop>
+                    <source src="gallery-video-1.mp4" type="video/mp4">
+                </video>
+                <div class="video-badge">▶ VIDEO</div>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Garage Installation Process</div>
+                    <div class="gallery-category">Video - Residential</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 4 - Industrial Warehouse -->
+            <div class="gallery-item" data-category="industrial" onclick="openLightbox(4)">
+                <img src="gallery-image-4.jpg" alt="Industrial Warehouse Epoxy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Warehouse Floor Coating</div>
+                    <div class="gallery-category">Industrial</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 5 - Residential Basement -->
+            <div class="gallery-item" data-category="residential" onclick="openLightbox(5)">
+                <img src="gallery-image-5.jpg" alt="Basement Epoxy Flooring">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Finished Basement Floor</div>
+                    <div class="gallery-category">Residential</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 6 - Decorative Flake -->
+            <div class="gallery-item" data-category="decorative residential" onclick="openLightbox(6)">
+                <img src="gallery-image-6.jpg" alt="Decorative Flake Epoxy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Custom Flake Design</div>
+                    <div class="gallery-category">Decorative</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 7 - Commercial Kitchen -->
+            <div class="gallery-item" data-category="commercial" onclick="openLightbox(7)">
+                <img src="gallery-image-7.jpg" alt="Commercial Kitchen Epoxy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Restaurant Kitchen Floor</div>
+                    <div class="gallery-category">Commercial</div>
+                </div>
+            </div>
+
+            <!-- VIDEO 2 -->
+            <div class="gallery-item" data-category="videos commercial" onclick="openLightbox(8)">
+                <video muted loop>
+                    <source src="gallery-video-2.mp4" type="video/mp4">
+                </video>
+                <div class="video-badge">▶ VIDEO</div>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Commercial Space Before & After</div>
+                    <div class="gallery-category">Video - Commercial</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 8 - Residential Patio -->
+            <div class="gallery-item" data-category="residential" onclick="openLightbox(9)">
+                <img src="gallery-image-8.jpg" alt="Patio Epoxy Coating">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Outdoor Patio Coating</div>
+                    <div class="gallery-category">Residential</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 9 - Industrial Factory -->
+            <div class="gallery-item" data-category="industrial" onclick="openLightbox(10)">
+                <img src="gallery-image-9.jpg" alt="Factory Floor Epoxy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Manufacturing Facility</div>
+                    <div class="gallery-category">Industrial</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 10 - Decorative Custom -->
+            <div class="gallery-item" data-category="decorative commercial" onclick="openLightbox(11)">
+                <img src="gallery-image-10.jpg" alt="Custom Design Epoxy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Logo Integration Floor</div>
+                    <div class="gallery-category">Decorative</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 11 - Residential Interior -->
+            <div class="gallery-item" data-category="residential" onclick="openLightbox(12)">
+                <img src="gallery-image-11.jpg" alt="Interior Epoxy Flooring">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Kitchen Floor Coating</div>
+                    <div class="gallery-category">Residential</div>
+                </div>
+            </div>
+
+            <!-- VIDEO 3 -->
+            <div class="gallery-item" data-category="videos decorative" onclick="openLightbox(13)">
+                <video muted loop>
+                    <source src="gallery-video-3.mp4" type="video/mp4">
+                </video>
+                <div class="video-badge">▶ VIDEO</div>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Metallic Epoxy Application</div>
+                    <div class="gallery-category">Video - Decorative</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 12 - Commercial Showroom -->
+            <div class="gallery-item" data-category="commercial" onclick="openLightbox(14)">
+                <img src="gallery-image-12.jpg" alt="Showroom Epoxy Floor">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Auto Showroom Floor</div>
+                    <div class="gallery-category">Commercial</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 13 - Residential Garage 2 -->
+            <div class="gallery-item" data-category="residential" onclick="openLightbox(15)">
+                <img src="gallery-image-13.jpg" alt="Two Car Garage Epoxy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">2-Car Garage Upgrade</div>
+                    <div class="gallery-category">Residential</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 14 - Industrial Chemical -->
+            <div class="gallery-item" data-category="industrial" onclick="openLightbox(16)">
+                <img src="gallery-image-14.jpg" alt="Chemical Resistant Epoxy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Chemical Resistant Floor</div>
+                    <div class="gallery-category">Industrial</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 15 - Decorative Pattern -->
+            <div class="gallery-item" data-category="decorative" onclick="openLightbox(17)">
+                <img src="gallery-image-15.jpg" alt="Custom Pattern Epoxy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Geometric Pattern Design</div>
+                    <div class="gallery-category">Decorative</div>
+                </div>
+            </div>
+
+            <!-- VIDEO 4 -->
+            <div class="gallery-item" data-category="videos industrial" onclick="openLightbox(18)">
+                <video muted loop>
+                    <source src="gallery-video-4.mp4" type="video/mp4">
+                </video>
+                <div class="video-badge">▶ VIDEO</div>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Industrial Installation</div>
+                    <div class="gallery-category">Video - Industrial</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 16 - Commercial Office -->
+            <div class="gallery-item" data-category="commercial" onclick="openLightbox(19)">
+                <img src="gallery-image-16.jpg" alt="Office Epoxy Flooring">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Corporate Office Floor</div>
+                    <div class="gallery-category">Commercial</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 17 - Residential Laundry -->
+            <div class="gallery-item" data-category="residential" onclick="openLightbox(20)">
+                <img src="gallery-image-17.jpg" alt="Laundry Room Epoxy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Laundry Room Floor</div>
+                    <div class="gallery-category">Residential</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 18 - Industrial Clean Room -->
+            <div class="gallery-item" data-category="industrial" onclick="openLightbox(21)">
+                <img src="gallery-image-18.jpg" alt="Clean Room Epoxy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Clean Room Flooring</div>
+                    <div class="gallery-category">Industrial</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 19 - Decorative Metallic 2 -->
+            <div class="gallery-item" data-category="decorative" onclick="openLightbox(22)">
+                <img src="gallery-image-19.jpg" alt="Metallic Epoxy Design">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Swirl Metallic Effect</div>
+                    <div class="gallery-category">Decorative</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 20 - Commercial Gym -->
+            <div class="gallery-item" data-category="commercial" onclick="openLightbox(23)">
+                <img src="gallery-image-20.jpg" alt="Gym Epoxy Flooring">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Fitness Center Floor</div>
+                    <div class="gallery-category">Commercial</div>
+                </div>
+            </div>
+
+            <!-- VIDEO 5 -->
+            <div class="gallery-item" data-category="videos residential" onclick="openLightbox(24)">
+                <video muted loop>
+                    <source src="gallery-video-5.mp4" type="video/mp4">
+                </video>
+                <div class="video-badge">▶ VIDEO</div>
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Time-Lapse Installation</div>
+                    <div class="gallery-category">Video - Residential</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 21 - Residential Three Car -->
+            <div class="gallery-item" data-category="residential" onclick="openLightbox(25)">
+                <img src="gallery-image-21.jpg" alt="Three Car Garage Epoxy">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">3-Car Garage Luxury</div>
+                    <div class="gallery-category">Residential</div>
+                </div>
+            </div>
+
+            <!-- IMAGE 22 - Commercial Restaurant -->
+            <div class="gallery-item" data-category="commercial" onclick="openLightbox(26)">
+                <img src="gallery-image-22.jpg" alt="Restaurant Epoxy Floor">
+                <div class="gallery-overlay">
+                    <div class="gallery-title">Restaurant Dining Area</div>
+                    <div class="gallery-category">Commercial</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Ready to Start Your Project?</h2>
+        <p>Let's create a beautiful, durable epoxy floor for your Connecticut property.</p>
+        <a href="index.html#contact" class="btn btn-primary">Get Free Estimate</a>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <button class="lightbox-close" onclick="closeLightbox(event)">✕</button>
+        <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1, event)">‹</button>
+        <div class="lightbox-content" id="lightboxContent"></div>
+        <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1, event)">›</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Menelik Epoxy Floor Coating, LLC | Licensed & Insured in Connecticut</p>
+        <p>Phone: <a href="tel:203-449-8607">(203) 449-8607</a> | Email: <a href="mailto:info@menelikepoxy.com">info@menelikepoxy.com</a></p>
+        <p style="margin-top: 1rem;">
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About</a> | 
+            <a href="index.html#services">Services</a> | 
+            <a href="faq.html">FAQ</a> | 
+            <a href="index.html#contact">Contact</a>
+        </p>
+        <p style="margin-top: 1rem;">&copy; 2024 Menelik Epoxy Floor Coating, LLC. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        let currentLightboxIndex = 0;
+        const galleryItems = [];
+        
+        // Collect all gallery items
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            const img = item.querySelector('img');
+            const video = item.querySelector('video');
+            if (img) {
+                galleryItems.push({
+                    type: 'image',
+                    src: img.src,
+                    alt: img.alt
+                });
+            } else if (video) {
+                galleryItems.push({
+                    type: 'video',
+                    src: video.querySelector('source').src
+                });
+            }
+        });
+        
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+        
+        function filterGallery(category) {
+            const items = document.querySelectorAll('.gallery-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all') {
+                    item.style.display = 'block';
+                } else {
+                    const categories = item.dataset.category;
+                    if (categories.includes(category)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        }
+        
+        function openLightbox(index) {
+            currentLightboxIndex = index;
+            const lightbox = document.getElementById('lightbox');
+            const content = document.getElementById('lightboxContent');
+            const item = galleryItems[index];
+            
+            if (item.type === 'image') {
+                content.innerHTML = `<img src="${item.src}" alt="${item.alt}">`;
+            } else if (item.type === 'video') {
+                content.innerHTML = `<video controls autoplay style="max-width: 100%; max-height: 90vh;"><source src="${item.src}" type="video/mp4"></video>`;
+            }
+            
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeLightbox(event) {
+            if (event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
+                const lightbox = document.getElementById('lightbox');
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+        
+        function navigateLightbox(direction, event) {
+            event.stopPropagation();
+            currentLightboxIndex += direction;
+            
+            if (currentLightboxIndex < 0) {
+                currentLightboxIndex = galleryItems.length - 1;
+            } else if (currentLightboxIndex >= galleryItems.length) {
+                currentLightboxIndex = 0;
+            }
+            
+            const content = document.getElementById('lightboxContent');
+            const item = galleryItems[currentLightboxIndex];
+            
+            if (item.type === 'image') {
+                content.innerHTML = `<img src="${item.src}" alt="${item.alt}">`;
+            } else if (item.type === 'video') {
+                content.innerHTML = `<video controls autoplay style="max-width: 100%; max-height: 90vh;"><source src="${item.src}" type="video/mp4"></video>`;
+            }
+        }
+        
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const lightbox = document.getElementById('lightbox');
+                if (lightbox.classList.contains('active')) {
+                    lightbox.classList.remove('active');
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        });
+        
+        // Navigate with arrow keys
+        document.addEventListener('keydown', function(event) {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox.classList.contains('active')) {
+                if (event.key === 'ArrowLeft') {
+                    navigateLightbox(-1, event);
+                } else if (event.key === 'ArrowRight') {
+                    navigateLightbox(1, event);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
