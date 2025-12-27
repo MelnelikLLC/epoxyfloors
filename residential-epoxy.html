@@ -254,20 +254,6 @@
             font-family: 'Outfit', sans-serif;
         }
         
-        /* Image Placeholder */
-        .image-placeholder {
-            width: 100%;
-            height: 400px;
-            background: var(--light-bg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--accent-color);
-            font-size: 1.2rem;
-            margin: 2rem 0;
-            border: 2px dashed var(--border-color);
-        }
-        
         /* CTA Section */
         .cta-section {
             background: var(--primary-color);
@@ -363,9 +349,20 @@
             Menelik Epoxy Floor Coating brings over [X] years of experience transforming Connecticut homes with premium epoxy floor coatings. Our residential epoxy flooring services provide homeowners with durable, beautiful, and easy-to-maintain floors that last 20+ years. From garage floors to basement renovations, we deliver professional installation backed by our lifetime support guarantee.
         </p>
 
-        <!-- Image Placeholder -->
-        <div class="image-placeholder">
-            Add Image: residential-garage-before-after.jpg (1200x600px)
+        <!-- Videos Section -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
+            <div>
+                <video controls style="width: 100%; height: auto; max-height: 400px; border-radius: 0;">
+                    <source src="residential-video-1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div>
+                <video controls style="width: 100%; height: auto; max-height: 400px; border-radius: 0;">
+                    <source src="residential-video-2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
 
         <!-- Residential Services Grid -->
@@ -383,9 +380,7 @@
                     <li>1-2 day installation</li>
                     <li>Easy to clean & maintain</li>
                 </ul>
-                <div class="image-placeholder" style="height: 200px; margin-top: 1rem;">
-                    garage-epoxy-1.jpg
-                </div>
+                <img src="garage-epoxy-1.jpg" alt="Garage Floor Epoxy Installation" style="width: 100%; height: 200px; object-fit: cover; margin-top: 1rem;">
             </div>
 
             <div class="service-item">
@@ -399,9 +394,7 @@
                     <li>Temperature tolerant</li>
                     <li>Long-lasting durability</li>
                 </ul>
-                <div class="image-placeholder" style="height: 200px; margin-top: 1rem;">
-                    basement-epoxy-1.jpg
-                </div>
+                <img src="basement-epoxy-1.jpg" alt="Basement Epoxy Flooring" style="width: 100%; height: 200px; object-fit: cover; margin-top: 1rem;">
             </div>
 
             <div class="service-item">
@@ -415,9 +408,7 @@
                     <li>Hot & cold tolerant</li>
                     <li>Easy snow removal</li>
                 </ul>
-                <div class="image-placeholder" style="height: 200px; margin-top: 1rem;">
-                    patio-epoxy-1.jpg
-                </div>
+                <img src="patio-epoxy-1.jpg" alt="Patio & Porch Epoxy Coating" style="width: 100%; height: 200px; object-fit: cover; margin-top: 1rem;">
             </div>
 
             <div class="service-item">
@@ -431,9 +422,7 @@
                     <li>Scratch resistant</li>
                     <li>Designer aesthetics</li>
                 </ul>
-                <div class="image-placeholder" style="height: 200px; margin-top: 1rem;">
-                    interior-epoxy-1.jpg
-                </div>
+                <img src="interior-epoxy-1.jpg" alt="Interior Floor Epoxy Coating" style="width: 100%; height: 200px; object-fit: cover; margin-top: 1rem;">
             </div>
         </div>
 
